@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0
+}
+
+body{
+    background-color: black;
+}
+.container{
+    width: 80%;
+    height: 100vh;
+    background-color: white;
+    margin: auto;
+    background-image: url("https://www.cellulare-magazine.it/wp-content/uploads/2018/07/gambling-tips.jpeg");
+    background-size: cover;
+    color: white;
+}
+
+#site_header,
+#site_main{
+    padding: 50px;
+}
+.header_box,
+#game_box{
+    width: 50%;
+    border: 1px solid black;
+    text-align: center;
+    margin: auto;
+    background-color: grey;
+    filter: opacity(0.9);
+}
+
+

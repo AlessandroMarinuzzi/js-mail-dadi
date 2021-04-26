@@ -8,9 +8,17 @@ console.log(userEmail);
 // Stampa un messaggio appropriato sull’esito del controllo.
 var listEmail = ["Player_1@gmail.com", "Player_2@gmail.com","Player_3@gmail.com"]
 console.log(listEmail);
-var allowed = listEmail.includes(userEmail)
+// var allowed = listEmail.includes(userEmail)
 var access = document.getElementById("access")
 var game = document.getElementById('game_box');
+
+var allowed = false;
+
+for(var i=0; i < listEmail.length; i++){
+    if (userEmail == listEmail[i]){
+        allowed = true
+    }
+}
 
 if (allowed == true){
     access.innerHTML = "Access Granted"
@@ -21,6 +29,8 @@ if (allowed == true){
     game_box.style.display = 'none'
     console.log(access);
 }
+
+// ************************************************************************
 // function containsObj(userEmail, listEmail){
 //     for (var userEmail = 0; userEmail < listEmail.length; userEmail++){
 //         if (listEmail[userEmail] === userEmail) {
